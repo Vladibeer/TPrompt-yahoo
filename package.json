@@ -1,0 +1,24 @@
+{
+  "name": "tprompt",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TPrompt - телепромптър за Windows и Android",
+  "scripts": {
+    "vendor": "bash scripts/fetch-vendor.sh",
+    "tauri": "tauri",
+    "win:dev": "tauri dev",
+    "win:build": "tauri build",
+    "android:add": "cap add android",
+    "android:sync": "cap sync android",
+    "android:open": "cap open android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.0.0",
+    "@capacitor/app": "^7.0.0",
+    "@capacitor/core": "^7.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.0.0",
+    "@tauri-apps/cli": "^2"
+  }
+}
